@@ -15,7 +15,7 @@ Things to note:
 g++ huffencode.cpp -std=c++17 -o huffencode
 ```
 
-2. Attempt some of the following commands, according to this commandline structure: `huffencode -i <input.txt> -o <output.huff> --header <none|freq32> --stats <stats.json>`
+2. Attempt some of the following commands, according to this commandline structure: `huffencode -i <input.txt> -o <output.huff> --header <none|freq32> --stats <stats.json>`. All files will be in the `output/` directory.
 
 ```bash
 # Without --header or --stats
@@ -33,4 +33,14 @@ g++ huffencode.cpp -std=c++17 -o huffencode
 # Edge cases (nothing in file)
 ./huffencode -i empty.txt -o empty.huff 
 ./huffencode -i empty.txt -o empty.huff --stats empty.json
+```
+
+3. Generate the files into `gen-data/` using `make_data.cpp` It follows the structure `./make_data <single-symbol> <three-symbols>`.
+
+```bash
+# Compile
+g++ make_data.cpp -std=c++17 -o make_data
+
+# Example usage
+./make_data A CBA
 ```

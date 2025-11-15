@@ -3,5 +3,8 @@ output/
 *.DS_Store
 
 huffencode
+make_data
 archive/
 build.sh
+
+*.o
