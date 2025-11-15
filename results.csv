@@ -1,0 +1,5 @@
+dataset,header_mode,input_bytes,alphabet_size,bitstream_bits,header_bits,padding_bits,total_output_bits,ratio
+E,none,10000,56,44325,0,3,44328,0.5541
+R,none,10000,98,66644,0,4,66648,0.8331
+S,none,10000,1,10000,0,0,10000,0.125
+T,none,10000,3,16636,0,4,16640,0.208
